@@ -51,7 +51,7 @@ const WatchScreen = () => {
           title={`_video?.snippet?.title`}
           allowFullScreen
           width="100%"
-          height="430"
+          height="480"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           // src="https://www.youtube.com/embed/tgbNymZ7vqY"
           src={`https://www.youtube.com/embed/${id}`}

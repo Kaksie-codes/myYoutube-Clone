@@ -16,9 +16,8 @@
 }
 .container{
   width: 97%;
-  max-width: 1200px;
-  margin-inline: auto;
-  /* background: green; */
+  max-width: 1350px;  
+  margin-inline: auto;  
 }
 body{
   font-family: 'Poppins', sans-serif;

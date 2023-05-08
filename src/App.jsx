@@ -34,13 +34,13 @@ function App() {
   const dispatch = useDispatch();
   const { user } = useSelector(state => state.user);
   const navigate = useNavigate();
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   
+  const [isLoggedIn, setIsLoggedIn] = useState(false);  
   const [sidebarOpen, toggleSidebar] = useState(false);  
   const handleToggleSidebar = () => {
-    toggleSidebar(!sidebarOpen);
-    console.log('clicked')
+    toggleSidebar(!sidebarOpen);    
   }
+
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(userAuth => {
       if(userAuth){

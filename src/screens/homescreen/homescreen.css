@@ -148,11 +148,9 @@
     grid-template-columns: repeat(3, 1fr) !important;
     grid-column-gap: 16px;
     grid-row-gap: 30px;
-    margin-top: 15px;
-    /* padding-left: 20px; */
-    margin-inline: auto;
-    /* width: 100%; */
-    max-width: 950px;    
+    margin-top: 15px;    
+    margin-inline: auto;    
+    max-width: 1000px;    
 }
 
 .video__card .thumbnail{
