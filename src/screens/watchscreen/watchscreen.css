@@ -1,0 +1,38 @@
+.watchscreen{
+    width: 100%;
+    display: flex;
+    /* margin-inline: 20px; */
+    /* background: blue; */
+}
+.watchscreen .watchscreen__player{
+    flex: 0.65;
+    margin-bottom: 2rem; 
+}
+.watchscreen .watchscreen__related-videos{
+    flex: 0.35;
+    /* margin-left: 1.5rem; */
+    padding-left: 1.5rem;
+}
+.watchscreen .show__more-btn{
+    padding: 5px 8px;
+    color: #000;
+    margin-bottom: 0.4rem;
+}
+
+@media screen and (max-width:64em){ 
+    .watchscreen{
+        flex-direction: column;
+    }       
+    .watchscreen .watchscreen__related-videos{
+        /* margin-left: 0; */
+        padding-left: 0;
+        width: 100%;
+    }
+    .watchscreen .watchscreen__player{
+        width: 100%;        
+    }
+}
+
+@media screen and (max-width:40em){
+    
+}

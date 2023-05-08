@@ -1,0 +1,27 @@
+.loginscreen{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginscreen__modal{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* background-color: red; */
+    border-radius: 10px;
+    border: 2px solid rgb(66, 133, 244);
+    /* border: 2px solid red; */
+}
+.loginscreen__modal img{
+    width: 6rem;
+}
+.loginscreen span{
+    background: transparent !important;
+    border-radius: unset;
+    color: #fff;
+}

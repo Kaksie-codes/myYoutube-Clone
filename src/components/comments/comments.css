@@ -1,0 +1,55 @@
+.comments{
+    margin-top: 1.5rem;
+    width: 100%;
+}
+.comments__form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.comments__form form{
+    flex: 1;    
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.comments button{
+    padding: 5px 8px;
+    color: #000;
+    margin-bottom: 0.4rem;
+}
+form input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1rem;
+    
+}
+.comments__form img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comments img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.comment{
+    font-size: 0.9rem;
+    /* border-bottom: 1px solid #ccc; */
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+}
+.comment .comment__header{
+    font-weight: 600;
+}

@@ -1,0 +1,272 @@
+.homescreen__content{
+    width: 100%;   
+    display: flex;    
+}
+.homescreen__content .sidebar{
+    min-width: 220px;
+    position: sticky;  
+    top: 4rem;    
+    height: calc(100vh - 5rem);
+    transition: transform 0.2s ease-in;   
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;    
+} 
+.homescreen__content .sidebar:hover{
+    scrollbar-color: #ccc transparent;
+  } 
+  .homescreen__content  .sidebar::-webkit-scrollbar{
+    width: 0.7em;
+  }
+  .homescreen__content  .sidebar::-webkit-scrollbar-track{
+    border-radius: 100vw;
+    margin-block: 0.5em;    
+    background: transparent;
+  }
+  .homescreen__content  .sidebar::-webkit-scrollbar-thumb{
+    border-radius: 100vw;   
+    background: transparent;   
+  }
+  .homescreen__content .sidebar:hover::-webkit-scrollbar-thumb{
+    background: #ccc;
+  }
+  .homescreen__content  .main__links{
+    width: 100%;
+    padding-right: 10px;
+    height: fit-content;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+  }
+.homescreen__content .sidebar .main__links{
+    width: 100%;
+    padding-right: 10px;
+    height: fit-content;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+.homescreen__content .sidebar .main__links .row{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;    
+    width: 100%;    
+    flex-wrap: wrap;    
+    cursor: pointer;
+}
+
+.homescreen__content .row .nav__icon{
+  height: 1em !important;
+  width: 1em !important;
+  font-weight: normal !important;
+  color: rgb(70, 69, 69);
+}
+.homescreen__content .sidebar .row:first-child{
+  /* color: #ed3833; */
+  font-weight: 600;
+  background: rgb(240, 237, 237);
+}
+.homescreen__content .sidebar .row:first-child .nav__icon{
+  color: #000;
+}
+.homescreen__content .row h2{
+  margin-left: 10px;
+}
+
+.homescreen__content .subscribed__list{
+  margin-top: 15px;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.homescreen__content .subscribed__list h3{
+  padding-left: 10px;
+}
+.homescreen__content .sidebar .subscription{
+  display: flex;
+  align-items: center;  
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 20px;
+  cursor: pointer;
+}
+.homescreen__content .sidebar .subscription:hover{
+  background: rgb(240, 237, 237);
+}
+.homescreen__content .subscription div{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* justify-content: flex-start; */
+}
+.homescreen__content .subscription img{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;  
+}
+.homescreen__content .subscription p{
+  display: flex;
+  word-wrap: none;
+}
+.homescreen__content .subscription .nav__icon{
+  color: #ed3833;
+  height: 0.8em !important;
+  width: 0.8em !important;
+}
+
+
+.homescreen__content .sidebar .row h2{
+    margin-left: 10px;
+  }
+.homescreen__content .sidebar.show small{   
+    display: none;
+}
+.homescreen__content .sidebar.show .main__links{
+    border-bottom: none;
+}
+.homescreen__content .sidebar.show{
+    min-width: 50px;
+}
+.homescreen__content .sidebar.show .subscribed__list{
+    display: none;
+} 
+.homescreen__content .sidebar.show .row{
+    padding-inline: 0px;
+  }
+.homescreen__content .sidebar.show .row:first-child{
+    background: unset;
+  }
+.homescreen__content .videos__container{    
+    flex: 1;
+    overflow: hidden;    
+}
+.videos__container-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+    /* padding-left: 20px; */
+    margin-inline: auto;
+    /* width: 100%; */
+    max-width: 950px;    
+}
+
+.video__card .thumbnail{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;  
+    position: relative;  
+}
+.video__card .thumbnail > p{
+    position: absolute;
+    /* top: 0; */
+    bottom: 10px;
+    right: 5px;
+    color: #fff;
+    font-weight: 600;
+    background: #000;
+    padding: 1px;    
+}
+
+.video__card .thumbnail img{
+    width: 100%;  
+    height: 100%; 
+    border-radius: 10px;  
+}
+.video__card .videos__info-wrapper{
+    display: flex;
+    /* align-items: flex-start; */
+    margin-top: 7px;
+    gap: 12px;
+}
+
+.videos__info-wrapper .user__photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;   
+}
+.videos__info-wrapper .video__info{
+    color: #5a5a5a;
+    /* font-size: 13px; */
+}
+.video__info a{
+    color: #000;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+.video__info .video__info-stats{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:64em){
+    .homescreen__content .sidebar{
+        min-width: 50px;
+    }
+    .homescreen__content .sidebar{
+        background: #fff;        
+    }
+    .homescreen__content .sidebar small{   
+        display: none;
+    }
+    .homescreen__content .sidebar .main__links{
+        border-bottom: none;
+    }    
+    .homescreen__content .sidebar .subscribed__list{
+        display: none;
+    } 
+    .homescreen__content .sidebar .row{
+        padding-inline: 0px;
+        display: flex;
+    }
+    .homescreen__content .sidebar .row:first-child{
+        background: unset;
+    }
+    .homescreen__content .sidebar.show{
+        min-width: 17.75rem;
+        position: absolute;
+        z-index: 1000;
+        top: 3rem;
+        height: 100vh;
+        padding-top: 1rem;
+        width: 30vw;        
+    }
+    .homescreen__content .sidebar.show .subscribed__list{
+        display: block;
+    }
+    .homescreen__content .sidebar.show small{
+        display: block;
+    }
+    .videos__container-content{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media screen and (max-width:40em) {
+    .videos__container-content{
+        grid-template-columns: 1fr !important;
+        width: 100%;
+        margin-inline: 0;
+    }
+    .homescreen__content .sidebar{
+        /* transform: translate(-150%); */
+        position: absolute;
+        z-index: 1000;
+        height: fit-content;
+        background: #fff;   
+        display: none;           
+    }
+    
+    .homescreen__content .sidebar.show{        
+        /* transform: translate(0); */
+        display: block;
+        width: 100vw;
+        width: fit-content;
+    }
+}

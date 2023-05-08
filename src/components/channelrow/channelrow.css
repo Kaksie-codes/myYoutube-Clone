@@ -1,0 +1,32 @@
+.channelRow{
+    display: flex;
+    align-items: center;
+    width: 100%;  
+    border-top: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc; 
+    margin-block: 1rem;
+}
+.channelRow__text{
+    display: flex;
+    flex-direction: column;
+}
+.channelRow__text > small{
+    color: #606060;
+}
+.channelRow__text > h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: flex-start;
+}
+.channnelRow__logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 10px 60px;
+}
+@media screen and (max-width:40em){
+    .channelRow{
+        width: 100%;
+    }
+}

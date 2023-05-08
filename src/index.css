@@ -1,0 +1,138 @@
+:root{
+  --text-color: #b1bdb4;
+  --black-primary:#16181b;
+  --black-secondary:#4c4c4c;
+
+
+  --color: #5a5a5a;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+.container{
+  width: 97%;
+  max-width: 1200px;
+  margin-inline: auto;
+  /* background: green; */
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+.app{
+  /* background: red; */
+  margin: 0;
+}
+.main__content {
+  display: flex;
+  margin-top: 1rem;  
+}
+.main__content .sidebar{
+  padding-top: 1rem;
+  width: 250px;
+  z-index: 100;
+  left: 10px;
+  position: fixed;  
+  top: 2.7rem;    
+  height: calc(100vh - 2.7rem);
+  transition: transform 0.2s ease-in;   
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  background: #fff;
+  scrollbar-color: transparent transparent;
+  transform: translate(-150%);
+  /* position: absolute; */
+}
+.main__content  .sidebar:hover{
+  scrollbar-color: #ccc transparent;
+} 
+.main__content .sidebar::-webkit-scrollbar{
+  width: 0.7em;
+}
+.main__content .sidebar::-webkit-scrollbar-track{
+  border-radius: 100vw;
+  margin-block: 0.5em;    
+  background: transparent;
+}
+.main__content .sidebar::-webkit-scrollbar-thumb{
+  border-radius: 100vw;   
+  background: transparent;   
+}
+.main__content .sidebar:hover::-webkit-scrollbar-thumb{
+  background: #ccc;
+}
+.main__content .main__links{
+  width: 100%;
+  padding-right: 10px;
+  height: fit-content;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+.main__content .row{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;    
+  width: 100%;    
+  flex-wrap: wrap; 
+  cursor: pointer;   
+}
+.main__content .sidebar .row:first-child{
+  /* color: #ed3833; */
+  font-weight: 600;
+  background: rgb(240, 237, 237);
+}
+.main__content .sidebar .row:first-child .nav__icon{
+  color: #000;
+}
+.main__content .subscribed__list{
+  margin-top: 15px;
+  width: 100%;
+  padding-right: 10px;
+}
+.main__content .subscribed__list h3{
+  padding-left: 10px;
+}
+.main__content .sidebar .subscription{
+  display: flex;
+  align-items: center;  
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 20px;
+  cursor: pointer;
+}
+.main__content .sidebar .subscription:hover{
+  background: rgb(240, 237, 237);
+}
+.main__content .subscription div{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__content .subscription img{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;  
+}
+.main__content .subscription p{
+  display: flex;
+  word-wrap: none;
+}
+.main__content .subscription .nav__icon{
+  color: #ed3833;
+  height: 0.8em !important;
+  width: 0.8em !important;
+}
+.main__content .sidebar.show{
+  transform: translate(0);
+  /* display: block; */
+}

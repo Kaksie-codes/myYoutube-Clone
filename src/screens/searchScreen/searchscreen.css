@@ -1,0 +1,21 @@
+.searchscreen{
+    padding: 20px;
+    width: 100%;
+    flex: 1;
+    /* width: 600px; */
+}
+.searchscreen__filter{
+    display: flex;
+    align-items: center;
+    color: #606060;
+    /* font-size: xx-small !important; */
+    gap: 10px;
+}
+
+.searchscreen > hr{
+    height: 1px;
+    border: none;
+    background: lightgray;
+    margin-block: 10px;
+}
+

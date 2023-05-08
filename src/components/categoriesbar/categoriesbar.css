@@ -1,0 +1,28 @@
+.categories__bar{
+    display: flex;
+    padding: 0.5rem 0.3rem;
+    overflow-x: scroll;
+    gap: 1rem;
+    
+    scrollbar-width: none;
+}
+
+.categories__bar::-webkit-scrollbar{
+    display: none;
+}
+
+span{
+    padding: 0.3rem 0.5rem;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #fafafa;
+    background: rgb(240, 237, 237);
+    color: #000;    
+}
+
+span.active{
+    color: #fff;    
+    background: #000;
+}
+
