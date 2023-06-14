@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Image from '../../assets/nsikak.jpg'
+// import Image from '../../assets/nsikak.jpg'
 import { useSelector, useDispatch } from 'react-redux'
 import './comments.css'
 import Comment from '../Comment'
@@ -22,7 +22,7 @@ const Comments = () => {
     <div className='comments'>
         <p>12k comments</p>
         <div className="comments__form">
-            <img src={Image} alt="user image" className='user__image'/>
+            {/* <img src={Image} alt="user image" className='user__image'/> */}
             <form onSubmit={handleComment}>
                 <input type="text" placeholder='Write a Comment...'/>
                 <button>Comment</button>

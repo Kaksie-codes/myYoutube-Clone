@@ -3,7 +3,7 @@ import ThumbUpAltOutlinedIcon from '@mui/icons-material/ThumbUpAltOutlined';
 import ThumbDownOffAltOutlinedIcon from '@mui/icons-material/ThumbDownOffAltOutlined';
 import moment from 'moment';
 import numeral from 'numeral';
-import Image from '../../assets/nsikak.jpg'
+// import Image from '../../assets/nsikak.jpg'
 import axios from 'axios';
 import {auth} from '../../firebase'
 import { useDispatch, useSelector } from 'react-redux';

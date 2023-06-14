@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import TuneOutlinedIcon from '@mui/icons-material/TuneOutlined';
 import './searchscreen.css'
 import ChannelRow from '../../components/channelrow/ChannelRow';
-import Image from '../../assets/nsikak.jpg'
+// import Image from '../../assets/nsikak.jpg'
 import VideoRow from '../../components/videorow/VideoRow';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';

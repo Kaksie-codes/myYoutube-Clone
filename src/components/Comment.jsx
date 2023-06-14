@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../assets/nsikak.jpg'
+// import Image from '../assets/nsikak.jpg'
 import moment from 'moment'
 
 

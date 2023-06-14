@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import cardImage from '../../assets/city.jpg'
-import userPhoto from '../../assets/nsikak.jpg'
+// import userPhoto from '../../assets/nsikak.jpg'
 import axios from '../../axios'
 import moment from 'moment/moment'
 import numeral from 'numeral'

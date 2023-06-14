@@ -7,7 +7,7 @@ import MicIcon from '@mui/icons-material/Mic';
 import youtubeLogo from '../../assets/youtube__logo.png'
 import { Link, Navigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import Image from '../../assets/nsikak.jpg'
+// import Image from '../../assets/nsikak.jpg'
 import { useSelector } from 'react-redux';
 import { Avatar } from '@mui/material';
 import './header.css'
